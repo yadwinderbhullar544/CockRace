@@ -62,8 +62,15 @@ namespace CockRace
             };
 
             //this part is for assigning the constructor values which is created in guy class
+            Punter[] punters = new Punter[3];
+            punters[0] = Factory.CreatePunter("Yadwinder");
+            punters[0].SetPunter(null, 45, yadwinderRadioButton, yadwinderBetLabel);
             cockClients[0] = new CockClient("Yadwinder", null, 50, yadwinderRadioButton, yadwinderBetLabel);
+            punters[1] = Factory.CreatePunter("Love");
+            punters[1].SetPunter(null, 75, loveRadioButton, loveBetLabel);
             cockClients[1] = new CockClient("Love", null, 75, loveRadioButton, loveBetLabel);
+            punters[2] = Factory.CreatePunter("Rajinder");
+            punters[2].SetPunter(null, 45, rajinderRadioButton, rajinderBetLabel);
             cockClients[2] = new CockClient("Rajinder", null, 45, rajinderRadioButton, rajinderBetLabel);
 
             foreach (CockClient guy in cockClients)
@@ -110,7 +117,7 @@ namespace CockRace
 
             }
 
-            button1.Enabled = true;//here race button is enabled when race is finished
+            button1.Enabled = false;//here race button is enabled when race is finished
 
         }
 
@@ -162,6 +169,9 @@ namespace CockRace
                 numericUpDown1.Value = 1;
                 numericUpDown2.Value = 1;
 
+            }
+            {
+                Application.Restart();
             }
         }
     }

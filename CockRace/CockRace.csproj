@@ -55,8 +55,13 @@
     <Compile Include="CockBet.cs" />
     <Compile Include="CockClient.cs" />
     <Compile Include="CockGreyhound.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Love.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punter.cs" />
+    <Compile Include="Rajinder.cs" />
+    <Compile Include="Yadwinder.cs" />
     <EmbeddedResource Include="Cock.resx">
       <DependentUpon>Cock.cs</DependentUpon>
     </EmbeddedResource>
